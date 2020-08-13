@@ -9,8 +9,7 @@ const cors = require('cors')
 const { mongoose } = require('simonline-data')
 const router = require('./routes')
 
-// const { env: { PORT = 8080, NODE_ENV: env, MONGODB_PRODUCTION: MONGODB_URL }, argv: [, , port = PORT] } = process
-const { env: { PORT = 8080, NODE_ENV: env, TEST_MONGODB_URL: MONGODB_URL }, argv: [, , port = PORT] } = process
+const { env: { PORT = 8080, NODE_ENV: env, MONGODB_PRODUCTION: MONGODB_URL }, argv: [, , port = PORT] } = process
 
 mongoose.connect(MONGODB_URL, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false })
     .then(() => {
