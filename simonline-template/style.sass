@@ -1,0 +1,399 @@
+//Global
+*
+    margin: 0
+    padding: 0
+    color: black
+    text-decoration: none
+    font-size: 1.3rem
+    box-sizing: border-box
+
+.p1
+    border: 2px solid black
+    border-collapse: collapse
+    width: 100%
+    height: 100vh
+
+    animation: colorchange 50s infinite
+
+    @keyframes colorchange
+      0%   
+        background: red
+      25%  
+        background: yellow
+      50%  
+        background: green
+      75% 
+        background: blue
+      100%
+        background: red
+
+//Login
+.login
+    text-align: center
+    display: grid
+    grid-template: 20vh 20vh 60vh / 1fr
+
+h1
+    margin: 3rem auto 0
+    grid-area: 1 / 1 / 1 / 1
+    cursor: pointer
+
+h2
+    margin: 0 auto
+    grid-area: 2 / 1 / 2 / 1
+
+form
+    display: flex
+    flex-direction: column
+    margin: 0 auto
+    grid-area: 3 / 1 / 3 / 1
+
+button
+    background-color: transparent
+    border: none
+    cursor: pointer
+    &:hover
+        color: white
+
+input
+    margin: .5rem auto
+    background-color: transparent
+    border: none
+    text-align: center
+    grid-area: 2 / 1 / 2 / 1
+
+//Register
+.register
+    text-align: center
+    display: grid
+    grid-template: 20vh 20vh 60vh / 1fr
+
+h1
+    margin: 3rem auto 0
+    grid-area: 1 / 1 / 1 / 1
+    cursor: pointer
+
+h2
+    margin: 0 auto
+    grid-area: 2 / 1 / 2 / 1
+
+form
+    display: flex
+    flex-direction: column
+    margin: 0 auto
+    grid-area: 3 / 1 / 3 / 1
+
+button
+    background-color: transparent
+    border: none
+    cursor: pointer
+    &:hover
+        color: white
+
+input
+    margin: .5rem auto
+    background-color: transparent
+    border: none
+    text-align: center
+    grid-area: 2 / 1 / 2 / 1
+
+//Landing
+.landing
+    text-align: center
+    display: grid
+    grid-template: repeat(4, auto) / 1fr
+    &__title
+        font-size: 2rem
+        grid-area: 1 / 1 / 1 / 1
+        margin: .5rem 0
+    &__img
+        margin:0 auto
+        grid-area: 2 / 1 / 2 / 1
+    &__login
+        grid-area: 3 / 1 / 3 / 1
+        cursor: pointer
+        margin: 1rem 0 
+        &:hover
+            color: white
+    &__register
+        grid-area: 4 / 1 / 4 / 1
+        cursor: pointer
+        margin-bottom: .5rem
+        &:hover
+            color: white
+
+//Home
+.home
+    text-align: center
+    display: grid
+    grid-template: repeat(5, auto) / 1fr
+    &__logout
+        cursor: pointer
+        text-align: right
+        margin: 1rem 1rem 0 1rem
+        grid-area: 1 / 1 / 1 / 1
+        font-size: 1rem
+        &:hover
+            color: white
+    &__single-player 
+        cursor: pointer
+        grid-area: 2 / 1 / 2 / 1
+        &:hover
+            color: white
+    &__multi-player
+        cursor: pointer
+        grid-area: 3 / 1 / 3 / 1
+        &:hover
+            color: white
+    &__options
+        cursor: pointer
+        grid-area: 4 / 1 / 4 / 1
+        &:hover
+            color: white
+    &__hall-of-fame
+        cursor: pointer
+        grid-area: 5 / 1 / 5 / 1
+        &:hover
+            color: white
+
+//Multiplayer
+.multiplayer
+    text-align: center
+    display: grid
+    grid-template: repeat(3, auto) / 1fr
+
+.top-menu
+    display: flex
+    justify-content: space-between
+    margin: 1rem 1rem 0 1rem
+    grid-area: 1 / 1 / 1 / 1
+    &__back
+        cursor: pointer
+        font-size: 1rem
+        &:hover
+            color: white
+    &__logout
+        cursor: pointer
+        font-size: 1rem
+        &:hover
+            color: white
+    &__title
+        margin: 0
+            padding: 0
+
+//Create
+.create-group
+    text-align: center
+    display: grid
+    grid-template: repeat(2, auto) / 1fr
+
+.top-menu
+    display: flex
+    justify-content: space-between
+    margin: 1rem 1rem 0 1rem
+    grid-area: 1 / 1 / 1 / 1
+    &__back
+        cursor: pointer
+        font-size: 1rem
+        &:hover
+            color: white
+    &__logout
+        cursor: pointer
+        font-size: 1rem
+        &:hover
+            color: white
+
+.form
+    grid-area: 2 / 1 / 2 / 1
+
+.label
+    background-color: transparent
+    border: none
+    text-align: center
+
+.button
+    background-color: transparent
+    border: none
+    cursor: pointer
+    grid-area: 2 / 1 / 2 / 1
+    &:hover
+        color: white
+
+//Join Group
+.join-group
+    text-align: center
+    display: grid
+    grid-template: 20% 80% / 1fr
+
+.top-menu
+    display: flex
+    justify-content: space-between
+    margin: 1rem 1rem 0 1rem
+    grid-area: 1 / 1 / 1 / 1
+    &__back
+        cursor: pointer
+        font-size: 1rem
+        &:hover
+            color: white
+    &__logout
+        cursor: pointer
+        font-size: 1rem
+        &:hover
+            color: white
+
+.groups
+    grid-area: 2 / 1 / 2 / 1
+    display: flex
+    flex-wrap: wrap
+    flex-direction: column
+    justify-content: space-around
+    p
+        cursor: pointer
+        &:hover
+            color: white
+
+//Waiting room
+.waiting-room
+    text-align: center
+    display: grid
+    grid-template: 10% 90% / auto
+    overflow: scroll
+
+.top-menu
+    display: flex
+    justify-content: space-between
+    margin: 1rem 1rem 0 1rem
+    grid-area: 1 / 1 / 1 / 1
+    width: 93%
+    &__back
+        cursor: pointer
+        font-size: 1rem
+        &:hover
+            color: white
+    &__title
+        cursor: pointer
+        &:hover
+            color: white
+    &__logout
+        cursor: pointer
+        font-size: 1rem
+        &:hover
+            color: white
+
+.players
+    grid-area: 2 / 1 / 2 / 1
+    display: flex
+    flex-wrap: wrap
+    flex-direction: column
+    justify-content: space-around
+    p
+        margin: .4rem
+
+//Game
+.game
+    text-align: center
+    display: grid
+    grid-template: 15% 55% 40% / 1fr
+
+.top-menu
+    grid-area: 1 / 1
+    text-align: right
+
+.board
+    width: 100%
+    grid-area: 2 / 1
+    margin: 0 auto
+
+.container
+    margin: 0 auto
+    width: 280px
+    height: 280px 
+    position: relative
+    &__red
+        cursor: pointer
+        background-color: #b02222
+        width: 140px
+        height: 140px
+        border-top-left-radius: 200px
+        border: 2px solid black
+        float: left
+        &:hover
+            background-color: red
+    &__green
+        cursor: pointer
+        background-color: green
+        width: 140px
+        height: 140px
+        border-top-right-radius: 200px
+        border: 2px solid black
+        float: right
+        &:hover
+            background-color: #04ee04
+    &__blue
+        cursor: pointer
+        background-color: #1f4db0
+        width: 140px
+        height: 140px
+        border-bottom-right-radius: 200px
+        border: 2px solid black
+        float: right
+        &:hover
+            background-color:#0037ff
+    &__yellow
+        cursor: pointer
+        background-color: #c9c920
+        width: 140px
+        height: 140px
+        border-bottom-left-radius: 200px
+        border: 2px solid black
+        float: left
+        &:hover
+            background-color: #f9f900
+    &__gray
+        width: 65px
+        height: 65px
+        background-color: gray
+        border-radius: 50%
+        border: 2px solid black
+        position: absolute
+        top: 39%
+        right: 38.5%
+        line-height: 3rem
+
+.footer
+    grid-area: 3 / 1
+    &__text
+        font-size: 1rem
+
+.options
+    text-align: center
+    display: grid
+    grid-template: 10% 90% / 1fr
+
+.top-menu
+    display: flex
+    justify-content: space-between
+    margin: 1rem 1rem 0 1rem
+    &__back
+        cursor: pointer
+        font-size: 1rem
+        &:hover
+            color: white
+    &__logout
+        cursor: pointer
+        font-size: 1rem
+        &:hover
+            color: white
+            
+.body
+    display: flex
+    flex-direction: column
+    justify-content: space-evenly
+    &__sound
+        cursor: pointer
+        &:hover
+            color: white
+    &__theme
+        cursor: pointer
+        &:hover
+            color: white

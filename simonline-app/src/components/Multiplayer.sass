@@ -1,0 +1,35 @@
+.multiplayer
+    text-align: center
+    display: grid
+    grid-template: repeat(3, auto) / 1fr
+.top-menu
+    display: flex
+    justify-content: space-between
+    margin: 1rem 1rem 0 1rem
+    grid-area: 1 / 1 / 1 / 1
+    &__back
+        cursor: pointer
+        font-size: 1.8rem
+        &:hover
+            color: white
+    &__logout
+        cursor: pointer
+        font-size: 1.8rem
+        &:hover
+            color: white
+    &__title
+        font-size: 1.8rem
+        margin: 0
+        padding: 0
+.create-game
+    grid-area: 2 / 1 / 2 / 1
+    cursor: pointer
+    font-size: 1.5rem
+    &:hover
+        color: white
+.join-game
+    grid-area: 3 / 1
+    cursor: pointer
+    font-size: 1.5rem
+    &:hover
+        color: white

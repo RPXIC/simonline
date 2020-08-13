@@ -1,0 +1,34 @@
+.landing
+    text-align: center
+    display: grid
+    grid-template: repeat(4, auto) / 1fr
+    &__title
+        font-size: 3rem
+        grid-area: 1 / 1 / 1 / 1
+        margin: .5rem 0
+        line-height: 5rem
+    &__img
+        margin: 0 auto
+        width: 15rem
+        grid-area: 2 / 1 / 2 / 1
+        animation: logo-spin infinite 20s linear
+  
+    &__login
+        grid-area: 3 / 1 / 3 / 1
+        cursor: pointer
+        margin: 0 
+        &:hover
+            color: white
+    &__register
+        grid-area: 4 / 1 / 4 / 1
+        cursor: pointer
+        margin-bottom: .5rem
+        &:hover
+            color: white
+
+
+@keyframes logo-spin 
+  from 
+    transform: rotate(0deg)
+  to 
+    transform: rotate(360deg)

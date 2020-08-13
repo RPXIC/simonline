@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simonline template</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="p1 game">
+        <div class="top-menu"></div>
+        <div class="board">
+            <div class="container">
+                <div class="container__red"></div>
+                <div class="container__green"></div>
+                <div class="container__blue"></div>
+                <div class="container__yellow"></div>
+                <div class="container__gray">1</div>
+            </div>
+        </div>
+        <div class="footer">
+            <p class="footer__text">Player a wins!</p>
+            <p class="footer__text">Turn of: Player a</p>
+            <p class="footer__text">Remaining time: 20sec.</p>
+            <p class="footer__text">Player b out</p>
+            <p class="footer__text">Remaining players: 2</p>
+        </div>
+    </div>
+    
+    <div class="p1 landing">
+        <p class="landing__title">Simonline</p>
+        <img class="landing__img" src="./logo.svg" alt="logo">
+        <a class="landing__login">Login</a>
+        <a class="landing__register">Register</a>
+    </div>
+
+    <div class="p1 login">
+        <h1>Simonline</h1>
+        <h2>Login</h2>
+        <form>
+            <input type="text" placeholder="username" name="username"/>
+            <input type="password" placeholder="password" name="password"/>
+            <button>Login</button>
+        </form>
+    </div>
+
+    <div class="p1 register">
+        <h1>Simonline</h1>
+        <h2>Register</h2>
+        <form>
+        <input type="text" name="username" placeholder="username" />
+        <input type="password" name="password" placeholder="password" />
+        <button>Register</button>
+    </form>
+    </div>
+
+    <div class="p1 home">
+        <a class="home__logout">Logout</a>
+        <a class="home__single-player">Single player</a>
+        <a class="home__multi-player">Multiplayer</a>
+        <a class="home__options">Options</a>
+        <a class="home__hall-of-fame">Hall of fame</a>
+    </div>
+
+    <div class="p1 multiplayer">
+        <div class="top-menu">
+            <p class="top-menu__back">Back</p>
+            <p class="top-menu__title">Multiplayer</p>
+            <p class="top-menu__logout">Logout</p>
+        </div>
+        <p class="create-game">Create game</p>
+        <p class="join-game">Join game</p>
+    </div>
+
+    <div class="p1 create-group">
+        <div class="top-menu">
+            <p class="top-menu__back">Back</p>
+            <p class="top-menu__title">Create Game</p>
+            <p class="top-menu__logout">Logout</p>
+        </div>
+        <form class="form">
+            <input class="label" name="name" type="text" placeholder="name of game"/>
+            <button class="button">Create</button>
+        </form>
+        </div>
+
+        <div class="p1 join-group">
+            <div class="top-menu">
+                <p class="top-menu__back">Back</p>
+                <p class="top-menu__title">Join Game</p>
+                <p class="top-menu__logout">Logout</p>
+            </div>
+            <div class="groups">
+                <p>group1</p>
+                <p>group2</p>
+                <p>group3</p>
+                <p>group4</p>
+            </div>
+        </div>
+
+        <div class="p1 waiting-room">
+            <div class="top-menu">
+            <p class="top-menu__back">Back</p>
+            <p class="top-menu__title">Start</p>
+            <p class="top-menu__logout">Logout</p>
+            </div>
+            <div class="players">
+                <p>player a</p>
+                <p>player b</p>
+                <p>player c</p>
+                <p>player d</p>
+            </div>
+        </div>
+
+    <div class="p1 options">
+        <div class="top-menu">
+            <div class="top-menu__back">Back</div>
+            <div class="top-menu__title">Options</div>
+            <div class="top-menu__logout">Logout</div>
+        </div>
+        <div class="body">
+            <div class="body__sound">Sound: On</div>
+            <div class="body__theme">Theme: Light</div>
+        </div>
+    </div>
+    
+</body>
+</html>
